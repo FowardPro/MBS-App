@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background styling */
+.background_change {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main wrapper for the registration form */
+.registration-wrapper {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 9px 9px 18px #d9d9d9,
+        -9px -9px 18px #ffffff;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Left side (form fields) */
+.container.main {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Reverse the order of the columns */
+    width: 100%;
+    height: 100%;
+}
+
+/* Right side (image) */
+.side-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border-left: 5px solid #00a079;
+    box-shadow: inset 9px 9px 18px #14886f,
+        inset -9px -9px 18px #20d6a1;
+}
+
+.side-image .text {
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.side-image .text i {
+    font-style: italic;
+}
+
+.side-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form fields */
+.right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    width: 100%;
+}
+
+header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1bb295;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: inset 4px 4px 8px #c1c1c1,
+        inset -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #1bb295;
+    outline: none;
+    box-shadow: 0 0 10px rgba(27, 178, 149, 0.5);
+}
+
+.input-field label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    color: #1bb295;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.submit {
+    width: 100%;
+    background: linear-gradient(145deg, #1bb295, #159d82);
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #159d82,
+        -4px -4px 8px #1fd4a8;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #179b81;
+    transform: translateY(-2px);
+}
+
+.signin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin a {
+    color: #1bb295;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.signin a:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
